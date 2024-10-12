@@ -156,7 +156,7 @@ function endGame(){
                                         <p>${pseudo} your final score is : ${score}</p>	
                                         <input type="hidden" name="pseudo" value="${pseudo}">
                                         <input type="hidden" name="score" value="${score}">
-                                        <button onclick="handleRestart()" class="GameOver_popupBtn" id="BtnOverGame">Restart</button>
+                                        <button onclick="resetAndStartGame()" class="GameOver_popupBtn" id="BtnOverGame">Restart</button>
                                     </div>`;
     gameContainer.appendChild(gameOverMessage);
     document.querySelectorAll('.game-object').forEach(obj => {
